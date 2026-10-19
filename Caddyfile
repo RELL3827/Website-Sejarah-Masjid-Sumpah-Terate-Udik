@@ -1,9 +1,15 @@
+{
+	servers {
+		trusted_proxies static 0.0.0.0/0 ::/0
+	}
+}
+
 :{$PORT:80} {
 	root * /app/public
 	encode zstd gzip
 
 	php_server
 
-	@build path_regexp build ^/build/.*\.(css|js)(\?.*)?$
+	@build path /build/*
 	header @build Cache-Control "public, max-age=31536000, immutable"
 }

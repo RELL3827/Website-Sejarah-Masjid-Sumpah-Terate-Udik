@@ -31,10 +31,10 @@ RUN npm run build
 
 FROM base AS runtime
 
+COPY . .
 COPY --from=dependencies /app/vendor /app/vendor
 COPY --from=dependencies /app/composer.json /app/composer.lock /app/
 COPY --from=frontend /app/public/build /app/public/build
-COPY . .
 RUN mkdir -p \
         storage/framework/cache \
         storage/framework/sessions \

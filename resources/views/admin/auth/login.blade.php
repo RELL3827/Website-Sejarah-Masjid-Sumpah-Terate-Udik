@@ -18,9 +18,12 @@
     <div class="admin-auth-wrap">
         <div class="admin-auth-card card border-0 shadow">
             <div class="admin-auth-logo">
-                <div class="admin-auth-icon"><i class="bi bi-buildings"></i></div>
+                <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
+                     alt="Logo KKN III.3 Terate Udik"
+                     class="rounded-circle shadow mb-3"
+                     style="width: 72px; height: 72px; object-fit: cover; background: #fff; padding: 2px; border: 3px solid var(--gold);">
                 <h1 class="admin-auth-title">Panel Admin</h1>
-                <p class="admin-auth-subtitle">{{ setting('site_name') }}</p>
+                <p class="admin-auth-subtitle">{{ setting('site_name', 'Masjid Sumpah Terate Udik') }}</p>
             </div>
 
             <x-alert type="success" :message="session('success')" />

@@ -15,12 +15,14 @@
 <nav class="navbar navbar-expand-lg site-navbar sticky-top" id="siteNavbar" aria-label="Navigasi utama">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
-            <span class="brand-icon" aria-hidden="true">
-                <i class="bi bi-buildings"></i>
-            </span>
+            <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
+                 alt="Logo KKN III.3 Terate Udik"
+                 class="brand-logo-img"
+                 width="44"
+                 height="44">
             <span class="brand-text">
                 <span class="brand-name">{{ setting('site_name', 'Masjid Sumpah') }}</span>
-                <span class="brand-tagline d-none d-sm-block">Cilegon — Banten</span>
+                <span class="brand-tagline d-none d-sm-block">Terate Udik · Cilegon — Banten</span>
             </span>
         </a>
 

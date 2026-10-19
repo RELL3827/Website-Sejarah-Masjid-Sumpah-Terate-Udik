@@ -144,8 +144,37 @@
             </div>
         </div>
     </section>
-
+ 
+    {{-- ===================== TIM PENGEMBANG / KKN SECTION ===================== --}}
     <section class="section section-cream">
+        <div class="container">
+            <div class="museum-card p-4 p-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-3 text-center">
+                        <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
+                             alt="Logo Kelompok KKN III.3 Terate Udik"
+                             class="img-fluid rounded-circle shadow-lg"
+                             style="max-width: 170px; border: 4px solid var(--gold); padding: 4px; background: #fff;">
+                    </div>
+                    <div class="col-md-9">
+                        <span class="badge bg-gold text-dark px-3 py-2 rounded-pill fs-6 mb-2">Inisiator & Tim Pengembang Arsip</span>
+                        <h2 class="h3 font-heading mb-2">Kelompok KKN III.3 Terate Udik</h2>
+                        <p class="text-gold fw-semibold mb-3">Kuliah Kerja Nyata · Kampung Terate Udik, Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon</p>
+                        <p class="text-muted mb-3">
+                            Platform arsip digital ini dibangun sebagai bentuk pengabdian kepada masyarakat dalam merawat, mendokumentasikan, dan mempublikasikan sejarah luhur <strong>Masjid Sumpah</strong> (Masjid Perjuangan Banten). Seluruh materi dihimpun melalui penelusuran sejarah lisan bersama para sesepuh kampung, wawancara DKM Masjid Sumpah, serta dokumentasi fisik di lapangan.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-white text-brown border px-3 py-2"><i class="bi bi-shield-check text-gold me-1"></i> Dokumentasi Sejarah Otentik</span>
+                            <span class="badge bg-white text-brown border px-3 py-2"><i class="bi bi-camera text-gold me-1"></i> Digitalisasi Galeri & Arsip</span>
+                            <span class="badge bg-white text-brown border px-3 py-2"><i class="bi bi-people text-gold me-1"></i> Kolaborasi DKM & Kesepuhan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-white">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">

@@ -4,12 +4,22 @@
     <div class="container">
         <div class="row g-4">
             <div class="col-lg-5">
-                <h4 class="footer-brand">{{ setting('site_name', 'Masjid Sumpah') }} Cilegon</h4>
+                <div class="d-flex align-items-center gap-3 mb-3">
+                    <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
+                         alt="Logo KKN III.3 Terate Udik"
+                         class="footer-logo-img"
+                         width="56"
+                         height="56">
+                    <div>
+                        <h4 class="footer-brand mb-0">{{ setting('site_name', 'Masjid Sumpah') }}</h4>
+                        <span class="text-gold small fw-semibold">Kampung Terate Udik, Cilegon</span>
+                    </div>
+                </div>
                 <p class="footer-desc">
-                    {{ setting('site_description') ?? 'Arsip digital sejarah dan budaya Masjid Sumpah Cilegon—catatan pengurus dan warga tentang masjid ini.' }}
+                    Arsip digital dan dokumentasi sejarah Masjid Sumpah (Masjid Perjuangan Banten) diinisiasi dan dikembangkan oleh <strong>Kelompok KKN III.3 Terate Udik</strong> berkolaborasi dengan DKM & Kesepuhan Kampung Terate Udik.
                 </p>
-                <p class="footer-archive">
-                    <i class="bi bi-archive"></i> Arsip digital yang dirawat bersama
+                <p class="footer-archive text-gold">
+                    <i class="bi bi-patch-check-fill me-1"></i> Program Pengabdian Masyarakat & Pelestarian Sejarah Lokal
                 </p>
             </div>
 
@@ -59,7 +69,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>{{ setting('copyright_text', '© 2026 DKM Masjid Sumpah Cilegon. All Rights Reserved.') }}</p>
+            <p>{{ setting('copyright_text', '© ' . date('Y') . ' Masjid Sumpah Terate Udik · Diinisiasi oleh Kelompok KKN III.3 Terate Udik. All Rights Reserved.') }}</p>
         </div>
     </div>
 </footer>

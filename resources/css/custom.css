@@ -272,6 +272,54 @@ img {
     box-shadow: 0 0 0 2px rgba(194, 162, 74, 0.35);
 }
 
+.site-navbar .brand-logo-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    padding: 2px;
+    box-shadow: 0 0 0 2px rgba(194, 162, 74, 0.55), 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.site-navbar .navbar-brand:hover .brand-logo-img {
+    transform: scale(1.06) rotate(3deg);
+    box-shadow: 0 0 0 3px var(--gold), 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.footer-logo-img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    padding: 2px;
+    box-shadow: 0 0 0 2px var(--gold), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.kkn-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(194, 162, 74, 0.15);
+    border: 1px solid rgba(194, 162, 74, 0.4);
+    color: var(--gold-soft);
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+}
+
+.kkn-badge-pill img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+}
+
 .site-navbar .brand-name {
     display: block;
     font-family: var(--font-heading);

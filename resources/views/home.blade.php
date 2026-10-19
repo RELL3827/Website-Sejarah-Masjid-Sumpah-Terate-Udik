@@ -10,6 +10,12 @@
         <div class="hero-pattern" aria-hidden="true"></div>
         <div class="container hero-content">
             <div class="hero-inner reveal">
+                <div class="mb-3">
+                    <span class="kkn-badge-pill">
+                        <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}" alt="Logo KKN III.3 Terate Udik" width="22" height="22">
+                        <span>Arsip Digital · Kelompok KKN III.3 Terate Udik</span>
+                    </span>
+                </div>
                 <p class="hero-eyebrow"><i class="bi bi-geo-alt-fill"></i> Cilegon · Banten · Indonesia</p>
                 <h1 class="hero-title">{{ setting('hero_title', 'Masjid Sumpah') }}</h1>
                 <p class="hero-subtitle">{{ setting('hero_subtitle', 'Rumah ibadah bersejarah di Kampung Terate Udik, Cilegon — simbol perjuangan ulama Banten dan sarana pengungkapan kebenaran.') }}</p>

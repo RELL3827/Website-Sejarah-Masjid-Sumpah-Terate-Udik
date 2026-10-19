@@ -15,11 +15,14 @@
 <div class="admin-sidebar-backdrop" data-sidebar-close></div>
 
 <aside class="admin-sidebar" id="adminSidebar">
-    <div class="admin-sidebar-brand">
-        <div class="sidebar-icon"><i class="bi bi-buildings"></i></div>
+    <div class="admin-sidebar-brand d-flex align-items-center">
+        <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
+             alt="Logo KKN III.3 Terate Udik"
+             class="rounded-circle shadow-sm me-2"
+             style="width: 36px; height: 36px; object-fit: cover; background: #fff; padding: 1px; border: 2px solid var(--gold);">
         <div class="sidebar-brand-text">
             <span>Masjid Sumpah</span>
-            <span>Masigit</span>
+            <span>Terate Udik</span>
         </div>
         <button class="admin-sidebar-close ms-auto d-lg-none" data-sidebar-close aria-label="Tutup menu samping">
             <i class="bi bi-x-lg"></i>

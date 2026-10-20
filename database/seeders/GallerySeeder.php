@@ -58,6 +58,14 @@ class GallerySeeder extends Seeder
                 'year' => 'Masa Perjuangan',
                 'is_active' => true,
             ],
+            [
+                'title' => 'Landmark Menara Baja Kota Cilegon',
+                'description' => 'Ikon arsitektur modern Kota Cilegon sebagai Kota Baja, berpadu dengan jejak sejarah perjuangan rakyat Banten dan keterikatannya dengan Masjid Sumpah Terate Udik.',
+                'image' => 'images/dokumentasi/landmark-kota-baja-cilegon.jpg',
+                'category' => 'Lingkungan & Sejarah',
+                'year' => 'Kontemporer',
+                'is_active' => true,
+            ],
         ];
 
         Gallery::query()->delete();

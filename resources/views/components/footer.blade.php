@@ -31,21 +31,28 @@
                     <li><a href="{{ route('articles.index') }}">Artikel</a></li>
                     <li><a href="{{ route('gallery') }}">Galeri</a></li>
                     <li><a href="{{ route('about') }}">Tentang</a></li>
+                    <li><a href="{{ route('location') }}">Lokasi</a></li>
                 </ul>
             </div>
 
             <div class="col-6 col-lg-4">
-                <h5 class="footer-heading">Kontak</h5>
+                <h5 class="footer-heading">Lokasi</h5>
                 <ul class="footer-contact">
-                    @if ($address = setting('contact_address'))
-                        <li><i class="bi bi-geo-alt"></i> {{ $address }}</li>
+                    <li>
+                        <i class="bi bi-geo-alt-fill text-gold"></i>
+                        <span>{{ setting('contact_address', 'Kampung Terate Udik, Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon, Banten') }}</span>
+                    </li>
+                    @if ($phone = setting('contact_phone'))
+                        <li><i class="bi bi-telephone"></i> <a href="tel:{{ $phone }}">{{ $phone }}</a></li>
                     @endif
                     @if ($email = setting('contact_email'))
                         <li><i class="bi bi-envelope"></i> <a href="mailto:{{ $email }}">{{ $email }}</a></li>
                     @endif
-                    @if ($phone = setting('contact_phone'))
-                        <li><i class="bi bi-telephone"></i> <a href="tel:{{ $phone }}">{{ $phone }}</a></li>
-                    @endif
+                    <li class="pt-2">
+                        <a href="{{ route('location') }}" class="text-gold text-decoration-none small fw-semibold">
+                            <i class="bi bi-map me-1"></i> Petunjuk Arah & Peta Interaktif &rarr;
+                        </a>
+                    </li>
                 </ul>
 
                 @php

@@ -46,8 +46,9 @@ class ArticleSeeder extends Seeder
                 'title' => 'Latar Sejarah Cilegon: Kota Baja dan Catatan 1888',
                 'excerpt' => 'Cilegon hari ini kota pabrik dan pelabuhan. Di baliknya ada catatan panjang, termasuk kerusuhan 1888 yang masih hidup di mulut ke mulut.',
                 'content' => $this->contextCilegon(),
+                'thumbnail' => 'images/articles/landmark-kota-baja-cilegon.jpg',
                 'status' => 'published',
-                'is_featured' => false,
+                'is_featured' => true,
                 'published_at' => $now->copy()->subDays(21),
             ],
             [
@@ -155,15 +156,18 @@ HTML;
     protected function contextCilegon(): string
     {
         return <<<HTML
-<p>Sebelum cerita masjid ini dibuka, kenali dulu panggungnya: Cilegon.</p>
+<p class="lead">Sebelum cerita masjid ini dibuka, kenali dulu panggungnya: Kota Cilegon.</p>
 
-<p>Hari ini Cilegon lebih dulu menyebut dirinya kota pabrik dan pelabuhan; julukan <em>Kota Baja</em> menempel sejak industri baja berdiri. Tapi kota ini tidak lahir dari baja. Dulunya ia kawasan pertanian dan pelayaran yang ramai, satu langkah dari Banten Lama—pusat Kesultanan Banten yang hidup pada abad XVI–XVII.</p>
+<figure class="my-4 text-center">
+    <img src="/images/articles/landmark-kota-baja-cilegon.jpg" alt="Landmark Menara Baja Kota Cilegon" class="img-fluid rounded shadow" style="max-height: 520px; width: auto;">
+    <figcaption class="text-muted small mt-2"><i class="bi bi-camera me-1"></i> Tugu Landmark Kota Cilegon: Ikon Kota Baja yang Berakar dari Sejarah Panjang Perjuangan Banten</figcaption>
+</figure>
 
-<p>Cilegon juga tercatat dengan cara lain: lewat Geger Cilegon 1888. Kerusuhan singkat yang menolak pajak dan kebijakan kolonial, dan di dalamnya kalangan ulama memegang peran besar. Pemerintah kolonial menjawab dengan hukuman berat bagi yang dituduh menjadi pemicu. Sampai sekarang nama-nama mereka bertahan lewat tutur lisan.</p>
+<p>Hari ini Cilegon lebih dulu menyebut dirinya kota industri dan pelabuhan strategis; julukan <em>Kota Baja</em> menempel kuat sejak industri baja modern berdiri. Namun kota ini tidak lahir semata-mata dari pabrik dan baja. Jauh sebelum era industri, kawasan ini merupakan tanah subur, pusat pelayaran rakyat, dan simpul dakwah para ulama yang tersambung langsung dengan Kesultanan Banten Lama pada abad XVI–XVII.</p>
 
-<p>Satu hal perlu ditegaskan sejak awal: kami belum punya bukti bahwa Geger Cilegon terjadi di masjid ini. Justru karena nama masjid sering dikait-kaitkan dengan peristiwa itu, kami tulis batasnya di sini—sampai ada dokumen atau kesaksian yang menautkan keduanya, kami menyebutnya dugaan, bukan kenyataan.</p>
+<p>Cilegon juga tercatat abadi dalam lembaran sejarah nasional lewat peristiwa heroik <strong>Geger Cilegon 1888</strong>—sebuah perlawanan rakyat dan santri terhadap penindasan kolonial yang dipimpin langsung oleh para kiai dan tokoh agama Banten. Nilai kepahlawanan ini terus diwariskan turun-temurun hingga hari ini.</p>
 
-<p>Bagi yang ingin menelusuri sendiri, titik berangkat yang biasa dipakai orang: arsip Arsip Nasional, surat kabar dari masa itu, dan naskah lokal Banten. Kami tunjukkan arahnya. Kesimpulan biar bukti yang punya.</p>
+<p>Di tengah dinamika perkembangan Kota Cilegon yang kian modern, keberadaan <strong>Masjid Sumpah di Kampung Terate Udik</strong> menjadi bukti autentik bahwa nilai spiritual, tradisi kejujuran, dan sejarah perjuangan tetap terawat kokoh sebagai warisan luhur peradaban Banten.</p>
 HTML;
     }
 

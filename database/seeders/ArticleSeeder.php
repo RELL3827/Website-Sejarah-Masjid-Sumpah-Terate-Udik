@@ -52,15 +52,6 @@ class ArticleSeeder extends Seeder
                 'published_at' => $now->copy()->subDays(21),
             ],
             [
-                'category_id' => $budaya?->id,
-                'title' => 'Arsip yang Kami Cari',
-                'excerpt' => 'Foto lama, catatan wakaf, peta, dan cerita para sepuh—bahan yang bisa memulai penelusuran.',
-                'content' => $this->archiveWanted(),
-                'status' => 'published',
-                'is_featured' => false,
-                'published_at' => $now->copy()->subDays(14),
-            ],
-            [
                 'category_id' => $arsitektur?->id,
                 'title' => 'Catatan Awal Arsitektur Masjid',
                 'excerpt' => 'Kerangka pendokumentasian bangunan: denah, atap, bahan, dan perbandingannya dengan masjid Banten lain.',
@@ -168,38 +159,6 @@ HTML;
 <p>Cilegon juga tercatat abadi dalam lembaran sejarah nasional lewat peristiwa heroik <strong>Geger Cilegon 1888</strong>—sebuah perlawanan rakyat dan santri terhadap penindasan kolonial yang dipimpin langsung oleh para kiai dan tokoh agama Banten. Nilai kepahlawanan ini terus diwariskan turun-temurun hingga hari ini.</p>
 
 <p>Di tengah dinamika perkembangan Kota Cilegon yang kian modern, keberadaan <strong>Masjid Sumpah di Kampung Terate Udik</strong> menjadi bukti autentik bahwa nilai spiritual, tradisi kejujuran, dan sejarah perjuangan tetap terawat kokoh sebagai warisan luhur peradaban Banten.</p>
-HTML;
-    }
-
-    protected function archiveWanted(): string
-    {
-        return <<<HTML
-<p>Sejarah masjid ini biasanya bersembunyi di barang yang dulu jarang dianggap penting. Ini yang sedang kami kumpulkan:</p>
-
-<h3>Dokumen</h3>
-<ul>
-    <li>Catatan wakaf tanah dan bangunan, dari yang resmi sampai catatan tangan.</li>
-    <li>Daftar imam, khatib, marbot, dan pengurus dari masa ke masa.</li>
-    <li>Risalah atau notulen rapat pengurus zaman dulu.</li>
-    <li>Surat-menyurat yang menyinggung masjid.</li>
-</ul>
-
-<h3>Gambar dan peta</h3>
-<ul>
-    <li>Foto masjid dari masa lampau: slide, klise, atau cetakan yang sudah lusuh.</li>
-    <li>Peta lama Cilegon yang masih memuat lokasi masjid.</li>
-    <li>Sketsa, denah, dan gambar renovasi.</li>
-</ul>
-
-<h3>Penuturan</h3>
-<ul>
-    <li>Cerita para sepuh: bentuk awal bangunan, imam pertama, asal-usul nama.</li>
-    <li>Kisah keluarga yang menyinggung masjid di momen penting.</li>
-</ul>
-
-<p>Tiap bahan yang masuk kami catat asal-usulnya, pindai, beri keterangan, lalu aslinya kami kembalikan. Yang menyumbang kami tulis namanya sebagai sumber, kecuali meminta untuk disamarkan.</p>
-
-<p>Punya salah satunya? Halaman Kontak menunggu.</p>
 HTML;
     }
 

@@ -50,6 +50,14 @@ class GallerySeeder extends Seeder
                 'year' => 'Masa Kolonial',
                 'is_active' => true,
             ],
+            [
+                'title' => 'Cerita Tentang Masa Lalu dan Sejarah Terate Udik',
+                'description' => 'Arsip foto dokumentasi kuno bangunan bersejarah dengan jeruji klasik dan selasar masa lampau Kampung Terate Udik, merekam jejak peradaban dan ingatan para sepuh pejuang.',
+                'image' => 'images/dokumentasi/cerita-sejarah-terate-udik.jpg',
+                'category' => 'Dokumentasi Lama',
+                'year' => 'Masa Perjuangan',
+                'is_active' => true,
+            ],
         ];
 
         Gallery::query()->delete();

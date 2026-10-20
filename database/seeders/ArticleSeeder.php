@@ -23,9 +23,20 @@ class ArticleSeeder extends Seeder
         $articles = [
             [
                 'category_id' => $sejarah?->id,
+                'title' => 'Cerita Tentang Masa Lalu dan Sejarah Terate Udik',
+                'excerpt' => 'Menyusuri jejak peradaban Kampung Terate Udik sejak era Kesultanan Banten, Langgar Keramat para wali, hingga berdirinya Masjid Sumpah sebagai simbol perjuangan dan kebenaran.',
+                'content' => $this->ceritaTerateUdik(),
+                'thumbnail' => 'images/articles/cerita-sejarah-terate-udik.jpg',
+                'status' => 'published',
+                'is_featured' => true,
+                'published_at' => $now->copy()->subDays(5),
+            ],
+            [
+                'category_id' => $sejarah?->id,
                 'title' => 'Mengenal Masjid Sumpah: Jejak Perjuangan dan Pengungkapan Kebenaran di Cilegon',
                 'excerpt' => 'Salah satu masjid di Kota Cilegon dengan nama unik “Masjid Sumpah”. Dikenal sebagai Masjid Perjuangan Banten dan sarana mengungkap kebenaran bagi pihak yang tidak jujur.',
                 'content' => $this->intro(),
+                'thumbnail' => 'images/articles/cerita-sejarah-terate-udik.jpg',
                 'status' => 'published',
                 'is_featured' => true,
                 'published_at' => $now->copy()->subDays(30),
@@ -75,6 +86,31 @@ class ArticleSeeder extends Seeder
                 $article + ['user_id' => $admin?->id, 'slug' => $slug]
             );
         }
+    }
+
+    protected function ceritaTerateUdik(): string
+    {
+        return <<<HTML
+<p class="lead">Kampung Terate Udik, yang terletak di Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon, menyimpan rekaman sejarah panjang yang tak terpisahkan dari denyut perjuangan peradaban Banten. Di tengah perkampungan inilah berdiri <strong>Masjid Sumpah</strong>, mercusuar spiritual dan benteng perjuangan masa lampau.</p>
+
+<figure class="my-4 text-center">
+    <img src="/images/articles/cerita-sejarah-terate-udik.jpg" alt="Cerita Tentang Masa Lalu dan Sejarah Terate Udik" class="img-fluid rounded shadow" style="max-height: 480px; width: auto;">
+    <figcaption class="text-muted small mt-2"><i class="bi bi-camera me-1"></i> Dokumentasi Sejarah: Cerita Tentang Masa Lalu dan Sejarah Kampung Terate Udik</figcaption>
+</figure>
+
+<h3>Jejak Kampung Kuno Sejak Era Kesultanan Banten</h3>
+<p>Sejak abad ke-15 hingga ke-16, kawasan Terate Udik telah menjadi permukiman yang hidup. Di sinilah para ulama, kiai, dan santri berkumpul dalam sebuah langgar kecil keramat. Bangunan langgar tersebut memiliki keistimewaan yang selalu diingat warga: walau secara fisik tampak mungil, ia senantiasa mencukupi jamaah yang shalat seberapa banyak pun yang berdatangan.</p>
+
+<p>Nama Terate Udik sendiri mencerminkan posisi geografis dan kultural perkampungan yang asri dengan aliran sungai, persawahan, serta jalur lintasan ulama antara Cilegon, Kasultanan Banten Lama, hingga Cirebon dan Demak.</p>
+
+<h3>Pusat Tirakat dan Pertemuan Pejuang</h3>
+<p>Masa lalu Terate Udik diwarnai dengan tradisi tirakat para sepuh. Para pejuang tanah air dan penyebar agama Islam menjadikan kampung ini sebagai tempat musyawarah tertutup untuk menyusun strategi perjuangan melawan penjajahan kolonial. Semangat gotong royong warga kampung begitu kuat; tua dan muda bersama-sama merehab langgar keramat menjadi masjid megah berarsitektur khas Banten dengan empat undak atap limas dan mongolo sakral.</p>
+
+<h3>Tradisi Ikrar Kejujuran yang Melegenda</h3>
+<p>Kisah masa lalu Terate Udik tak lengkap tanpa tradisi persumpahan syariat Islam. Bila ada perselisihan atau tuduhan yang sulit diungkap secara hukum biasa, warga mendatangi juru kunci Masjid Sumpah untuk mengambil sumpah di hadapan Al-Qur'an. Tradisi ini menjaga Terate Udik menjadi kampung yang senantiasa menjunjung tinggi kebenaran, integritas, dan ketakwaan kepada Allah SWT.</p>
+
+<p>Kini, melalui inisiatif arsip digital oleh <strong>Kelompok KKN III.3 Terate Udik</strong>, rekaman masa lalu yang berharga ini dilestarikan dalam bentuk tulisan, naskah digital, dan galeri visual agar tetap menginspirasi generasi masa depan.</p>
+HTML;
     }
 
     protected function intro(): string

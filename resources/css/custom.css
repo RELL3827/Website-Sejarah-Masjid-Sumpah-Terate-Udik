@@ -114,6 +114,13 @@ img {
         radial-gradient(circle at 80% 70%, #fff 1.5px, transparent 1.5px),
         linear-gradient(30deg, transparent 45%, rgba(255,255,255,.5) 46%, rgba(255,255,255,.5) 47%, transparent 48%);
     background-size: 120px 120px, 180px 180px, 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-dark-green > .container {
+    position: relative;
+    z-index: 2;
 }
 
 .section-heading {
@@ -651,6 +658,13 @@ img {
     flex: 1;
     position: relative;
     text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.timeline-h-item:hover {
+    text-decoration: none;
 }
 
 .timeline-h-dot {
@@ -688,12 +702,13 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: var(--radius);
     padding: 1.15rem;
-    transition: background 0.25s ease, border-color 0.25s ease;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 .timeline-h-item:hover .timeline-h-content {
     background: rgba(255, 255, 255, 0.13);
     border-color: var(--gold);
+    transform: translateY(-4px);
 }
 
 .timeline-h-year {
@@ -1148,6 +1163,7 @@ img {
     opacity: 0.06;
     background-image: radial-gradient(circle at 80% 20%, #fff 1.5px, transparent 1.5px);
     background-size: 60px 60px;
+    pointer-events: none;
 }
 
 .article-hero-inner {
@@ -1815,6 +1831,7 @@ img {
         radial-gradient(circle at 20% 20%, #fff 1.5px, transparent 1.5px),
         linear-gradient(30deg, transparent 47%, rgba(255,255,255,.5) 48%, rgba(255,255,255,.5) 49%, transparent 50%);
     background-size: 90px 90px, 50px 50px;
+    pointer-events: none;
 }
 
 .cta-inner {

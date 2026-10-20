@@ -94,7 +94,7 @@
 
     {{-- ===================== TIMELINE RINGKAS ===================== --}}
     <section class="section section-dark-green">
-        <div class="container">
+        <div class="container position-relative" style="z-index: 2;">
             <div class="text-center section-heading">
                 <p class="section-eyebrow text-gold">Jejak Waktu</p>
                 <h2 class="section-title text-white">Garis Waktu Sejarah</h2>
@@ -103,7 +103,7 @@
 
             <div class="timeline-horizontal">
                 @forelse ($timelines->take(5) as $index => $item)
-                    <div class="timeline-h-item">
+                    <a href="{{ route('timeline') }}" class="timeline-h-item text-decoration-none d-block">
                         <div class="timeline-h-dot">
                             <span>{{ $index + 1 }}</span>
                         </div>
@@ -113,14 +113,14 @@
                             <h3 class="timeline-h-title">{{ $item->title }}</h3>
                             <p class="timeline-h-desc">{{ Str::limit($item->description, 100) }}</p>
                         </div>
-                    </div>
+                    </a>
                 @empty
                     <p class="text-white-50">Belum ada data timeline.</p>
                 @endforelse
             </div>
 
             <div class="text-center mt-5">
-                <a href="{{ route('timeline') }}" class="btn btn-gold">
+                <a href="{{ route('timeline') }}" class="btn btn-gold btn-lg position-relative" style="z-index: 5;">
                     Jelajahi Timeline Lengkap <i class="bi bi-arrow-right ms-1"></i>
                 </a>
             </div>

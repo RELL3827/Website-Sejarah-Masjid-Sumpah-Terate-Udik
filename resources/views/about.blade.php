@@ -41,8 +41,9 @@
             ],
             [
                 'icon' => 'bi-gem',
-                'title' => 'Pusaka & Makam Sepuh',
+                'title' => 'Jejak Benda & Pusaka Sepuh',
                 'text' => 'Merawat peninggalan bersejarah, pusaka kuno Banten, dan makam para waliyullah serta pejuang Geger Cilegon.',
+                'link' => '#jejak-benda',
             ],
         ];
     @endphp
@@ -66,11 +67,17 @@
             <div class="row g-4 mt-3">
                 @foreach ($sections as $section)
                     <div class="col-md-6 col-lg-4">
-                        <div class="about-card">
+                        @if (!empty($section['link']))
+                            <a href="{{ $section['link'] }}" class="text-decoration-none d-block h-100">
+                        @endif
+                        <div class="about-card h-100">
                             <div class="about-icon"><i class="bi {{ $section['icon'] }}"></i></div>
                             <h3 class="about-title">{{ $section['title'] }}</h3>
                             <p class="about-text">{{ $section['text'] }}</p>
                         </div>
+                        @if (!empty($section['link']))
+                            </a>
+                        @endif
                     </div>
                 @endforeach
             </div>
@@ -141,6 +148,123 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- ===================== JEJAK BENDA & PUSAKA TERATE UDIK ===================== --}}
+    <section class="section section-cream" id="jejak-benda">
+        <div class="container">
+            <div class="section-heading text-center">
+                <p class="section-eyebrow">Khazanah Leluhur</p>
+                <h2 class="section-title">Jejak Benda & Pusaka Terate Udik</h2>
+                <div class="divider-gold-center"></div>
+                <p class="text-muted mx-auto" style="max-width: 720px;">
+                    Koleksi peninggalan fisik bersejarah dari era Kesultanan Banten dan para sepuh pejuang yang dirawat dengan takzim oleh para juru kunci peninggalan Kampung Terate Udik.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/tombak-luk-3.jpg') }}" alt="Pusaka Tombak Luk 3" class="w-100 h-100" style="object-fit: contain;">
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Abad 15 (1400 M)</span>
+                                <span class="text-muted small">Pusaka & Pustaka</span>
+                            </div>
+                            <h3 class="h5 font-heading mb-1 text-brown">Tombak Luk 3</h3>
+                            <p class="small text-gold fw-semibold mb-2">Pamor: Pengawak Waja / Keleng</p>
+                            <p class="small text-muted mb-0">
+                                Pusaka berpamor Pengawak Waja era abad ke-15 Masehi. Simbol ketajaman tauhid dan kepeloporan syiar Islam awal di tanah Banten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/tombak-megantoro.jpg') }}" alt="Pusaka Tombak Megantoro" class="w-100 h-100" style="object-fit: contain;">
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Abad 17 (1600 M)</span>
+                                <span class="text-muted small">Pusaka & Pustaka</span>
+                            </div>
+                            <h3 class="h5 font-heading mb-1 text-brown">Tombak Megantoro</h3>
+                            <p class="small text-gold fw-semibold mb-2">Pamor: Wis Utah</p>
+                            <p class="small text-muted mb-0">
+                                Pusaka Tombak Megantoro peninggalan era Kesultanan Banten (1600 M) berpamor Wis Utah, lambang kepemimpinan ulama dan syiar pejuang.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/pedang-sunduk-alit.jpg') }}" alt="Pedang Sunduk Alit" class="w-100 h-100" style="object-fit: contain;">
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Abad 18 (1700 M)</span>
+                                <span class="text-muted small">Ekek Keling</span>
+                            </div>
+                            <h3 class="h5 font-heading mb-1 text-brown">Pedang Sunduk Alit</h3>
+                            <p class="small text-gold fw-semibold mb-2">Pamor: Wasutah · Gagang: Tanduk</p>
+                            <p class="small text-muted mb-0">
+                                Senjata pusaka berbilah tajam khas Banten dengan warangka kayu serta hulu gagang ukir dari tanduk alami.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/pedang-lameng.jpg') }}" alt="Pedang Lameng Pamengkang Jagat" class="w-100 h-100" style="object-fit: contain;">
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Abad 18 (1700 M)</span>
+                                <span class="text-muted small">Pusaka Sepuh</span>
+                            </div>
+                            <h3 class="h5 font-heading mb-1 text-brown">Pedang Lameng Pamengkang Jagat</h3>
+                            <p class="small text-gold fw-semibold mb-2">Pamor: Adeg, Batu Lapak / Puser Bumi</p>
+                            <p class="small text-muted mb-0">
+                                Memiliki corak pamor langka Adeg dan Puser Bumi dengan hulu gagang golok berbahan tanduk asli. Warisan ketangkasan para kiai dan pendekar pejuang Terate Udik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div style="background: #222; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/kendi-dan-pusaka-kuno.jpg') }}" alt="Kendi Pusaka dan Koleksi Benda Kuno" class="w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Koleksi Artefak</span>
+                                <span class="text-muted small">Peninggalan Sepuh</span>
+                            </div>
+                            <h3 class="h5 font-heading mb-1 text-brown">Kendi Pusaka & Artefak Bersejarah</h3>
+                            <p class="small text-gold fw-semibold mb-2">Kendi Mori, Mangkuk Kuno & Koleksi Bilah</p>
+                            <p class="small text-muted mb-0">
+                                Kendi berbalut kain mori putih, mangkuk porselen bermotif khas, rotan keramat, serta bilah-bilah golok yang dirawat para juru kunci makam waliyullah di Terate Udik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="{{ route('gallery', ['category' => 'Jejak Benda']) }}" class="btn btn-gold btn-lg shadow-sm">
+                    <i class="bi bi-images me-2"></i>Buka Galeri Foto Jejak Benda &rarr;
+                </a>
             </div>
         </div>
     </section>

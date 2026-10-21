@@ -41,6 +41,7 @@ class Gallery extends Model
             'Bangunan Masjid',
             'Interior',
             'Eksterior',
+            'Jejak Benda',
             'Kegiatan Keagamaan',
             'Dokumentasi Lama',
             'Dokumentasi Modern',

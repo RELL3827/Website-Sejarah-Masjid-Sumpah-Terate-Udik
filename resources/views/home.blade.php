@@ -59,32 +59,40 @@
                     <div class="row g-4">
                         <div class="section-eyebrow mb-1">Arsip yang dikumpulkan</div>
                         <div class="col-6">
-                            <div class="fact-card">
-                                <div class="fact-icon"><i class="bi bi-file-earmark-text"></i></div>
-                                <h3 class="fact-value">Naskah & Dokumen</h3>
-                                <p class="fact-label">Catatan wakaf, daftar imam, risalah pengurus</p>
-                            </div>
+                            <a href="{{ route('articles.index') }}" class="text-decoration-none d-block h-100">
+                                <div class="fact-card">
+                                    <div class="fact-icon"><i class="bi bi-file-earmark-text"></i></div>
+                                    <h3 class="fact-value">Naskah & Dokumen</h3>
+                                    <p class="fact-label">Catatan wakaf, daftar imam, risalah pengurus</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-6">
-                            <div class="fact-card fact-card-dark">
-                                <div class="fact-icon"><i class="bi bi-images"></i></div>
-                                <h3 class="fact-value">Foto & Peta Lama</h3>
-                                <p class="fact-label">Gambar masjid dari segala masa</p>
-                            </div>
+                            <a href="{{ route('gallery', ['category' => 'Dokumentasi Lama']) }}" class="text-decoration-none d-block h-100">
+                                <div class="fact-card fact-card-dark">
+                                    <div class="fact-icon"><i class="bi bi-images"></i></div>
+                                    <h3 class="fact-value">Foto & Peta Lama</h3>
+                                    <p class="fact-label">Gambar masjid dari segala masa</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-6">
-                            <div class="fact-card fact-card-gold">
-                                <div class="fact-icon"><i class="bi bi-mic"></i></div>
-                                <h3 class="fact-value">Penuturan Lisan</h3>
-                                <p class="fact-label">Kesaksian para sepuh dan warga</p>
-                            </div>
+                            <a href="{{ route('history') }}" class="text-decoration-none d-block h-100">
+                                <div class="fact-card fact-card-gold">
+                                    <div class="fact-icon"><i class="bi bi-mic"></i></div>
+                                    <h3 class="fact-value">Penuturan Lisan</h3>
+                                    <p class="fact-label">Kesaksian para sepuh dan warga</p>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-6">
-                            <div class="fact-card fact-card-green">
-                                <div class="fact-icon"><i class="bi bi-shop"></i></div>
-                                <h3 class="fact-value">Jejak Benda</h3>
-                                <p class="fact-label">Benda dan peralatan dari masa awal</p>
-                            </div>
+                            <a href="{{ route('gallery', ['category' => 'Jejak Benda']) }}" class="text-decoration-none d-block h-100">
+                                <div class="fact-card fact-card-green">
+                                    <div class="fact-icon"><i class="bi bi-shield-shaded"></i></div>
+                                    <h3 class="fact-value">Jejak Benda</h3>
+                                    <p class="fact-label">Pusaka, pedang, tombak & artefak kuno</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -222,7 +222,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
                         <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                             <img src="{{ asset('images/pusaka/pedang-lameng.jpg') }}" alt="Pedang Lameng Pamengkang Jagat" class="w-100 h-100" style="object-fit: contain;">
@@ -241,21 +241,61 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
-                        <div style="background: #222; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                            <img src="{{ asset('images/pusaka/kendi-dan-pusaka-kuno.jpg') }}" alt="Kendi Pusaka dan Koleksi Benda Kuno" class="w-100 h-100" style="object-fit: cover;">
+                        <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/kendi-banyu-adem.jpg') }}" alt="Kendi Banyu Adem" class="w-100 h-100" style="object-fit: contain;">
                         </div>
                         <div class="card-body p-4 bg-white">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Koleksi Artefak</span>
-                                <span class="text-muted small">Peninggalan Sepuh</span>
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Abad 17 (1600an)</span>
+                                <span class="text-muted small">Pusaka & Pustaka</span>
                             </div>
-                            <h3 class="h5 font-heading mb-1 text-brown">Kendi Pusaka & Artefak Bersejarah</h3>
-                            <p class="small text-gold fw-semibold mb-2">Kendi Mori, Mangkuk Kuno & Koleksi Bilah</p>
+                            <h3 class="h5 font-heading mb-1 text-brown">Kendi Banyu Adem</h3>
+                            <p class="small text-gold fw-semibold mb-2">Wadah Air Tradisional Berukir</p>
                             <p class="small text-muted mb-0">
-                                Kendi berbalut kain mori putih, mangkuk porselen bermotif khas, rotan keramat, serta bilah-bilah golok yang dirawat para juru kunci makam waliyullah di Terate Udik.
+                                Kendi berleher jenjang dengan cerat samping khas dan tutup kuno. Media air barakah dan penyejuk spiritual peninggalan para sesepuh pejuang Terate Udik.
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div style="background: #000; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="{{ asset('images/pusaka/keramik-dinasti-ming.jpg') }}" alt="Keramik Dinasti Ming" class="w-100 h-100" style="object-fit: contain;">
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-gold text-dark px-2 py-1 small rounded">Abad 17 (1600an)</span>
+                                <span class="text-muted small">Pusaka & Pustaka</span>
+                            </div>
+                            <h3 class="h5 font-heading mb-1 text-brown">Keramik Dinasti Ming</h3>
+                            <p class="small text-gold fw-semibold mb-2">Porselen Biru-Putih · Motif Ikan & Teratai</p>
+                            <p class="small text-muted mb-0">
+                                Mangkuk dan piring porselen biru-putih era Dinasti Ming. Menjadi saksi historis hubungan peradaban niaga maritim internasional Kesultanan Banten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm overflow-hidden" style="border-radius: var(--radius);">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-5" style="background: #222; height: 280px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                                <img src="{{ asset('images/pusaka/kendi-dan-pusaka-kuno.jpg') }}" alt="Koleksi Meja Pusaka & Artefak Kuno" class="w-100 h-100" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-7 p-4 bg-white">
+                                <span class="badge bg-green text-white px-3 py-1 small rounded mb-2">Koleksi Artefak Terate Udik</span>
+                                <h3 class="h4 font-heading mb-1 text-brown">Khazanah Kendi, Mangkuk Kuno & Bilah Pusaka</h3>
+                                <p class="small text-gold fw-semibold mb-2">Dirawat Turun-Temurun oleh Kesepuhan DKM</p>
+                                <p class="text-muted mb-3">
+                                    Dokumentasi meja pusaka merekam keutuhan artefak asli: kendi mori putih, mangkuk porselen Dinasti Ming, gulungan rotan keramat, serta bilah-bilah golok dan pedang bersejarah yang tersimpan di kediaman perawat pusaka makam para waliyullah Terate Udik.
+                                </p>
+                                <a href="{{ route('gallery', ['category' => 'Jejak Benda']) }}" class="btn btn-sm btn-outline-brown">
+                                    <i class="bi bi-images me-1"></i> Buka Detail Koleksi di Galeri
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

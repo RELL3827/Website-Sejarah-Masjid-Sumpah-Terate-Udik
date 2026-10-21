@@ -137,25 +137,47 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-md-6">
+                                    <div class="col-6 col-md-4">
                                         <div class="card h-100 border-0 shadow-sm overflow-hidden text-center bg-white" style="border-radius: var(--radius);">
                                             <div style="background: #000; height: 180px; display:flex; align-items:center; justify-content:center;">
                                                 <img src="{{ asset('images/pusaka/pedang-lameng.jpg') }}" alt="Pedang Lameng" class="w-100 h-100" style="object-fit: contain;">
                                             </div>
                                             <div class="card-body p-2 bg-light">
-                                                <h4 class="h6 mb-1 font-weight-bold">Pedang Lameng Pamengkang Jagat</h4>
+                                                <h4 class="h6 mb-1 font-weight-bold">Pedang Lameng</h4>
                                                 <span class="badge bg-gold text-dark small">Abad 18 (1700 M)</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-6 col-md-4">
                                         <div class="card h-100 border-0 shadow-sm overflow-hidden text-center bg-white" style="border-radius: var(--radius);">
-                                            <div style="background: #222; height: 180px; display:flex; align-items:center; justify-content:center;">
+                                            <div style="background: #000; height: 180px; display:flex; align-items:center; justify-content:center;">
+                                                <img src="{{ asset('images/pusaka/kendi-banyu-adem.jpg') }}" alt="Kendi Banyu Adem" class="w-100 h-100" style="object-fit: contain;">
+                                            </div>
+                                            <div class="card-body p-2 bg-light">
+                                                <h4 class="h6 mb-1 font-weight-bold">Kendi Banyu Adem</h4>
+                                                <span class="badge bg-gold text-dark small">Abad 17 (1600an)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="card h-100 border-0 shadow-sm overflow-hidden text-center bg-white" style="border-radius: var(--radius);">
+                                            <div style="background: #000; height: 180px; display:flex; align-items:center; justify-content:center;">
+                                                <img src="{{ asset('images/pusaka/keramik-dinasti-ming.jpg') }}" alt="Keramik Dinasti Ming" class="w-100 h-100" style="object-fit: contain;">
+                                            </div>
+                                            <div class="card-body p-2 bg-light">
+                                                <h4 class="h6 mb-1 font-weight-bold">Keramik Dinasti Ming</h4>
+                                                <span class="badge bg-gold text-dark small">Abad 17 (1600an)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card h-100 border-0 shadow-sm overflow-hidden text-center bg-white" style="border-radius: var(--radius);">
+                                            <div style="background: #222; height: 200px; display:flex; align-items:center; justify-content:center;">
                                                 <img src="{{ asset('images/pusaka/kendi-dan-pusaka-kuno.jpg') }}" alt="Kendi & Koleksi Pusaka" class="w-100 h-100" style="object-fit: cover;">
                                             </div>
                                             <div class="card-body p-2 bg-light">
                                                 <h4 class="h6 mb-1 font-weight-bold">Kendi Pusaka & Koleksi Artefak Kuno</h4>
-                                                <span class="badge bg-green text-white small">Peninggalan Sepuh</span>
+                                                <span class="badge bg-green text-white small">Peninggalan Sepuh Terate Udik</span>
                                             </div>
                                         </div>
                                     </div>

@@ -106,6 +106,22 @@ class GallerySeeder extends Seeder
                 'year' => 'Masa Tradisi Sepuh',
                 'is_active' => true,
             ],
+            [
+                'title' => 'Keramik Dinasti Ming',
+                'description' => 'Mangkuk dan piring keramik porselen biru-putih kuno peninggalan era Dinasti Ming dengan motif ikan dan bunga teratai air. Estimasi tarikh abad ke-17 (1600-an Masehi), bukti jejak perdagangan dan kebudayaan masa Kesultanan Banten.',
+                'image' => 'images/pusaka/keramik-dinasti-ming.jpg',
+                'category' => 'Jejak Benda',
+                'year' => 'Abad 17 (1600an)',
+                'is_active' => true,
+            ],
+            [
+                'title' => 'Kendi Banyu Adem',
+                'description' => 'Kendi Banyu Adem tradisional berleher panjang dengan cerat khusus dan tutup kuno berukir motif tradisional. Estimasi abad ke-17 (1600-an Masehi), wadah air barakah dan penyejuk peninggalan para sesepuh Terate Udik.',
+                'image' => 'images/pusaka/kendi-banyu-adem.jpg',
+                'category' => 'Jejak Benda',
+                'year' => 'Abad 17 (1600an)',
+                'is_active' => true,
+            ],
         ];
 
         Gallery::query()->delete();

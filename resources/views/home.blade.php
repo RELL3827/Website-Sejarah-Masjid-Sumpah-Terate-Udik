@@ -49,6 +49,21 @@
                             <i class="bi bi-shield-check"></i>
                             <strong>Situs Bersejarah Banten:</strong> Jejak pertemuan ulama pejuang kemerdekaan, arsitektur kuno, serta tradisi ikrar persumpahan syariat Islam.
                         </p>
+                        <div class="mt-4 pt-3 border-top">
+                            <p class="small fw-bold text-brown mb-2"><i class="bi bi-people-fill text-gold me-1"></i> Sumber Penuturan Sejarah:</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>KH. Mahmud</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Ust. Ahyar</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Mameu Fahrudim</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Ust. Afifi</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Alm. Ust. Arifin</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Mameu Mas'udi</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>H. Aliyumi</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Yai Basit</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Mameu Ustuhri</span>
+                                <span class="badge-source py-1 px-2" style="font-size: 0.8rem;"><i class="bi bi-person-fill"></i>Ki Arsyad</span>
+                            </div>
+                        </div>
                         <a href="{{ route('about') }}" class="btn btn-primary-custom">
                             Baca Catatan Lengkap <i class="bi bi-arrow-right ms-1"></i>
                         </a>

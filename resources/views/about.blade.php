@@ -58,6 +58,23 @@
                     <p class="lead text-muted mx-auto" style="max-width: 800px;">
                         {{ $mosque?->description ?? 'Zaman dahulu dikenal sebagai masjid sumpah perjuangan Banten dan sarana mengungkap kebenaran bagi pihak yang berselisih melalui proses sumpah sesuai syariat islam.' }}
                     </p>
+                    <div class="mt-3 mb-3">
+                        <p class="small text-gold fw-bold mb-2">
+                            <i class="bi bi-people-fill me-1"></i> Narasumber & Sumber Sejarah:
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>KH. Mahmud</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Ust. Ahyar</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Fahrudim</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Ust. Afifi</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Alm. Ust. Arifin</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Mas'udi</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>H. Aliyumi</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Yai Basit</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Ustuhri</span>
+                            <span class="badge-source"><i class="bi bi-person-fill"></i>Ki Arsyad</span>
+                        </div>
+                    </div>
                     @if ($mosque?->address)
                         <p class="text-brown"><i class="bi bi-geo-alt-fill me-1"></i>{{ $mosque->address }}</p>
                     @endif

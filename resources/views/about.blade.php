@@ -349,33 +349,110 @@
     </section>
  
     {{-- ===================== TIM PENGEMBANG / KKN SECTION ===================== --}}
-    <section class="section section-cream">
+    <section class="section section-cream" id="tim-kkn">
         <div class="container">
-            <div class="museum-card p-4 p-md-5">
-                <div class="row align-items-center g-4">
-                    <div class="col-md-3 text-center">
-                        <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
-                             alt="Logo Kelompok KKN III.3 Terate Udik"
-                             class="img-fluid rounded-circle shadow-lg"
-                             style="max-width: 170px; border: 4px solid var(--gold); padding: 4px; background: #fff;">
-                    </div>
-                    <div class="col-md-9">
-                        <span class="badge bg-gold text-dark px-3 py-2 rounded-pill fs-6 mb-2">Inisiator & Tim Pengembang Arsip</span>
-                        <h2 class="h3 font-heading mb-2">Kelompok KKN III.3 Terate Udik</h2>
-                        <p class="text-gold fw-semibold mb-3">Kuliah Kerja Nyata · Kampung Terate Udik, Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon</p>
-                        <p class="text-muted mb-3">
-                            Platform arsip digital ini dibangun sebagai bentuk pengabdian kepada masyarakat dalam merawat, mendokumentasikan, dan mempublikasikan sejarah luhur <strong>Masjid Sumpah</strong> (Masjid Perjuangan Banten). Seluruh materi dihimpun melalui penelusuran sejarah lisan bersama para sesepuh kampung, wawancara DKM Masjid Sumpah, serta dokumentasi fisik di lapangan.
+            <div class="kkn-showcase-card">
+                <div class="row align-items-center g-5">
+                    {{-- Kolom Foto Tim KKN --}}
+                    <div class="col-lg-5 text-center">
+                        <div class="kkn-photo-frame" data-bs-toggle="modal" data-bs-target="#kknPhotoModal" title="Klik untuk memperbesar foto">
+                            <span class="kkn-photo-zoom-hint"><i class="bi bi-zoom-in"></i> Perbesar Foto</span>
+                            <img src="{{ asset('images/logo/foto-kelompok-kkn-umb-2026.jpg') }}"
+                                 alt="Foto Kelompok KKN III.3 Universitas Muhammadiyah Banten 2026"
+                                 class="img-fluid">
+                            <div class="kkn-photo-overlay">
+                                <span class="badge bg-gold text-dark px-3 py-1 rounded-pill small fw-bold mb-1 align-self-start">
+                                    <i class="bi bi-award-fill me-1"></i> UMB 2026
+                                </span>
+                                <h4 class="text-white h6 font-heading mb-0 text-start">KKN-III.3 Desa Terate Udik</h4>
+                                <p class="text-white-50 small mb-0 text-start">Universitas Muhammadiyah Banten</p>
+                            </div>
+                        </div>
+                        <p class="small text-muted mt-2 mb-0 fst-italic">
+                            <i class="bi bi-info-circle me-1"></i>Klik foto untuk melihat dalam resolusi penuh
                         </p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge bg-white text-brown border px-3 py-2"><i class="bi bi-shield-check text-gold me-1"></i> Dokumentasi Sejarah Otentik</span>
-                            <span class="badge bg-white text-brown border px-3 py-2"><i class="bi bi-camera text-gold me-1"></i> Digitalisasi Galeri & Arsip</span>
-                            <span class="badge bg-white text-brown border px-3 py-2"><i class="bi bi-people text-gold me-1"></i> Kolaborasi DKM & Kesepuhan</span>
+                    </div>
+
+                    {{-- Kolom Keterangan & Narasi --}}
+                    <div class="col-lg-7">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <img src="{{ asset('images/logo/logo-kkn-terate-udik.png') }}"
+                                 alt="Logo Kelompok KKN III.3 Terate Udik"
+                                 class="rounded-circle shadow-sm"
+                                 style="width: 56px; height: 56px; border: 2px solid var(--gold); padding: 2px; background: #fff;">
+                            <div>
+                                <span class="badge bg-gold text-dark px-3 py-1 rounded-pill small fw-bold">
+                                    <i class="bi bi-mortarboard-fill me-1"></i> Inisiator & Tim Pengembang Arsip
+                                </span>
+                                <h2 class="h3 font-heading text-brown mb-0 mt-1">Kelompok KKN III.3 Terate Udik</h2>
+                                <p class="text-muted small mb-0">Universitas Muhammadiyah Banten (UMB) · Tahun 2026</p>
+                            </div>
+                        </div>
+
+                        <p class="text-brown fw-semibold mb-2" style="font-size: 1.05rem;">
+                            Pengabdian Mahasiswa dalam Menjaga Warisan Sejarah & Budaya Banten
+                        </p>
+                        <p class="text-muted mb-4" style="line-height: 1.8;">
+                            Platform arsip digital ini diinisiasi dan dibangun sebagai wujud nyata pengabdian kepada masyarakat oleh mahasiswa Kuliah Kerja Nyata (KKN) Kelompok III.3 Universitas Muhammadiyah Banten di Kampung Terate Udik, Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon. Bekerja sama erat dengan para sesepuh kesepuhan, juru kunci, dan pengurus DKM Masjid Sumpah guna mendokumentasikan memori kolektif, silsilah perjuangan kemerdekaan, pusaka Kesultanan Banten, serta tradisi luhur persumpahan syariat Islam.
+                        </p>
+
+                        {{-- 3 Pilar Kontribusi --}}
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-4">
+                                <div class="kkn-pillar-card">
+                                    <div class="kkn-pillar-icon"><i class="bi bi-mic-fill"></i></div>
+                                    <h4 class="h6 font-heading mb-1 text-brown">Riset Lisan</h4>
+                                    <p class="small text-muted mb-0">Wawancara kesepuhan & pejuang.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="kkn-pillar-card">
+                                    <div class="kkn-pillar-icon"><i class="bi bi-shield-shaded"></i></div>
+                                    <h4 class="h6 font-heading mb-1 text-brown">Pusaka Banten</h4>
+                                    <p class="small text-muted mb-0">Katalogisasi artefak & kendi mori.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="kkn-pillar-card">
+                                    <div class="kkn-pillar-icon"><i class="bi bi-globe2"></i></div>
+                                    <h4 class="h6 font-heading mb-1 text-brown">Arsip Digital</h4>
+                                    <p class="small text-muted mb-0">Portal edukasi sejarah terbuka.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-2 pt-2 border-top">
+                            <span class="badge bg-white text-brown border px-3 py-2 rounded-pill"><i class="bi bi-patch-check-fill text-gold me-1"></i> Universitas Muhammadiyah Banten</span>
+                            <span class="badge bg-white text-brown border px-3 py-2 rounded-pill"><i class="bi bi-award text-gold me-1"></i> Kampus Merdeka</span>
+                            <span class="badge bg-white text-brown border px-3 py-2 rounded-pill"><i class="bi bi-geo-alt-fill text-gold me-1"></i> Terate Udik, Cilegon</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    {{-- Modal Lightbox Foto KKN --}}
+    <div class="modal fade" id="kknPhotoModal" tabindex="-1" aria-labelledby="kknPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0" style="background: rgba(20, 16, 12, 0.95); backdrop-filter: blur(12px); border-radius: 16px;">
+                <div class="modal-header border-0 pb-0">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-gold text-dark px-3 py-1 rounded-pill">KKN-III.3 UMB 2026</span>
+                        <h5 class="modal-title text-white h6 font-heading mb-0" id="kknPhotoModalLabel">Kelompok KKN III.3 Universitas Muhammadiyah Banten</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-3 text-center">
+                    <img src="{{ asset('images/logo/foto-kelompok-kkn-umb-2026.jpg') }}"
+                         alt="Foto Lengkap Kelompok KKN III.3 Universitas Muhammadiyah Banten 2026"
+                         class="img-fluid rounded-3 shadow-lg"
+                         style="max-height: 82vh; object-fit: contain;">
+                    <p class="text-white-50 small mt-2 mb-0">Kampung Terate Udik, Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon — Banten</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="section bg-white">
         <div class="container">

@@ -30,12 +30,24 @@
                             @endif
 
                             <div class="notice-box mt-4">
-                                <div class="notice-box-icon"><i class="bi bi-bookmark-check-fill"></i></div>
+                                <div class="notice-box-icon"><i class="bi bi-people-fill"></i></div>
                                 <div class="notice-box-text">
-                                    <h3>Catatan Penuturan Sejarah</h3>
-                                    <p class="mb-0">
-                                        Dokumentasi ini dihimpun berdasarkan penuturan lisan para kesepuhan dan sesepuh Kampung Terate Udik, tokoh DKM, serta silsilah keturunan pejuang Geger Cilegon dan perawat pusaka Masjid Sumpah.
+                                    <h3>Narasumber & Sumber Penuturan Sejarah</h3>
+                                    <p class="mb-3 text-muted">
+                                        Dokumentasi sejarah Masjid Sumpah ini dihimpun dan diverifikasi berdasarkan penuturan lisan para kesepuhan, juru kunci, dan sesepuh pejuang Kampung Terate Udik:
                                     </p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>KH. Mahmud</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Ust. Ahyar</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Fahrudim</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Ust. Afifi</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Alm. Ust. Arifin</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Mas'udi</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>H. Aliyumi</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Yai Basit</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Ustuhri</span>
+                                        <span class="badge-source"><i class="bi bi-person-fill"></i>Ki Arsyad</span>
+                                    </div>
                                 </div>
                             </div>
 

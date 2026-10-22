@@ -147,6 +147,28 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="notice-box mt-3">
+                        <div class="notice-box-icon"><i class="bi bi-people-fill"></i></div>
+                        <div class="notice-box-text">
+                            <h3>Narasumber & Sumber Penuturan Sejarah</h3>
+                            <p class="mb-3 text-muted">
+                                Dokumentasi dan kisah sejarah lisan Masjid Sumpah dihimpun dari para kesepuhan, juru kunci, dan sesepuh Kampung Terate Udik:
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>KH. Mahmud</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Ust. Ahyar</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Fahrudim</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Ust. Afifi</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Alm. Ust. Arifin</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Mas'udi</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>H. Aliyumi</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Yai Basit</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Mameu Ustuhri</span>
+                                <span class="badge-source"><i class="bi bi-person-fill"></i>Ki Arsyad</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

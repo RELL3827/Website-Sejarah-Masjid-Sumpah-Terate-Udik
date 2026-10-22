@@ -1287,6 +1287,41 @@ img {
     margin-bottom: 0.35rem;
 }
 
+.bg-gold {
+    background-color: var(--gold) !important;
+    color: #2b2110 !important;
+}
+
+.badge-source {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #ffffff;
+    color: var(--brown);
+    border: 1px solid var(--gold);
+    padding: 0.4rem 0.85rem;
+    border-radius: 50rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(62, 47, 30, 0.05);
+    transition: all 0.2s ease;
+}
+
+.badge-source:hover {
+    background: var(--gold);
+    color: #2b2110;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(194, 162, 74, 0.25);
+}
+
+.badge-source i {
+    color: var(--gold-dark);
+}
+
+.badge-source:hover i {
+    color: #2b2110;
+}
+
 /* Sidebar */
 .sidebar-card {
     background: var(--white);

@@ -141,6 +141,21 @@ HTML;
     <li>Kepala ditutupi kain putih, dan pengurus memegang mushaf Al-Qur'an di atas kepala mereka seraya memandu ikrar sumpah.</li>
     <li>Ditegaskan bahwa segala akibat gaib dan dampak batiniah adalah kuasa Allah SWT dan tidak ada tuntutan kepada kuncen maupun pengurus masjid.</li>
 </ol>
+
+<h3>Narasumber & Sumber Penuturan Sejarah</h3>
+<p>Catatan dan dokumentasi sejarah Masjid Sumpah ini dihimpun berdasarkan penuturan lisan para kesepuhan, juru kunci, dan sesepuh Kampung Terate Udik, antara lain:</p>
+<ul>
+    <li><strong>KH. Mahmud</strong></li>
+    <li><strong>Ust. Ahyar</strong></li>
+    <li><strong>Mameu Fahrudim</strong></li>
+    <li><strong>Ust. Afifi</strong></li>
+    <li><strong>Alm. Ust. Arifin</strong></li>
+    <li><strong>Mameu Mas\'udi</strong></li>
+    <li><strong>H. Aliyumi</strong></li>
+    <li><strong>Yai Basit</strong></li>
+    <li><strong>Mameu Ustuhri</strong></li>
+    <li><strong>Ki Arsyad</strong></li>
+</ul>
 HTML;
     }
 

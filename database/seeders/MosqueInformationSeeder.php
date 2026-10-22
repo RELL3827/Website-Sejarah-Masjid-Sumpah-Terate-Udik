@@ -75,7 +75,22 @@ class MosqueInformationSeeder extends Seeder
     <li>Kepala kedua pihak ditutupi dengan kain putih.</li>
     <li>Pengurus masjid memegang mushaf Al-Qur\'an di atas kepala mereka satu per satu, seraya membimbing ikrar sumpah yang dipandu langsung oleh juru kunci.</li>
     <li>Setelah sumpah selesai, juru kunci menyatakan penegasan kepada kedua belah pihak dan keluarga bahwa apabila timbul kejadian, dampak batiniah, atau penyakit aneh di kemudian hari pada salah satu pihak, maka hal tersebut merupakan kuasa Allah SWT dan tidak boleh ada tuntutan kepada siapa pun, terutama kepada pihak kuncen maupun pengurus Masjid Sumpah.</li>
-</ol>',
+</ol>
+
+<h3>Narasumber & Sumber Penuturan Sejarah</h3>
+<p>Catatan dan dokumentasi sejarah Masjid Sumpah ini dihimpun berdasarkan penuturan lisan para kesepuhan, juru kunci, dan sesepuh Kampung Terate Udik, antara lain:</p>
+<ul>
+    <li><strong>KH. Mahmud</strong></li>
+    <li><strong>Ust. Ahyar</strong></li>
+    <li><strong>Mameu Fahrudim</strong></li>
+    <li><strong>Ust. Afifi</strong></li>
+    <li><strong>Alm. Ust. Arifin</strong></li>
+    <li><strong>Mameu Mas\'udi</strong></li>
+    <li><strong>H. Aliyumi</strong></li>
+    <li><strong>Yai Basit</strong></li>
+    <li><strong>Mameu Ustuhri</strong></li>
+    <li><strong>Ki Arsyad</strong></li>
+</ul>',
                 'architecture' => 'Bangunan berarsitektur kuno khas Banten berdenah persegi dengan lima pintu utama (dua pintu sisi kanan, dua pintu sisi kiri, dan satu pintu menghadap pengimaman) dengan tinggi ±1,5 meter yang bermakna setiap insan harus menundukkan kepala dan merendahkan diri di hadapan Sang Maha Kuasa saat beribadah. Di sisi belakang terdapat tiga pintu berukuran serupa. Di sisi luar sebelah barat berdiri menara khas Banten. Atapnya berbentuk limas empat undak berhiaskan satu mongolo besar di puncak dan empat mongolo kecil di tiap ujung undak teratas. Terdapat pendopo di bagian belakang untuk sarana musyawarah, dzikir Maulid/Marhaban, dan mediasi.',
                 'cultural_value' => 'Dikenal sebagai Masjid Perjuangan Banten yang sarat nilai spiritual dan historis: tempat musyawarah ulama pejuang kemerdekaan dan agama, tradisi tirakat dan dzikir masyarakat Terate Udik, pelestarian benda pusaka kuno dan makam para waliyullah, serta tradisi ikrar persumpahan berbasis syariat Islam di hadapan Al-Qur\'an sebagai ikhtiar luhur menyingkap kebenaran.',
                 'latitude' => -6.0093879,

@@ -56,7 +56,7 @@
                     <h2 class="section-title">{{ $mosque?->name ?? 'Masjid Sumpah' }} Cilegon</h2>
                     <div class="divider-gold-center"></div>
                     <p class="lead text-muted mx-auto" style="max-width: 800px;">
-                        {{ $mosque?->description ?? 'Salah satu masjid bersejarah di Kota Cilegon, Banten dengan nama unik “Masjid Sumpah”.' }}
+                        {{ $mosque?->description ?? 'Zaman dahulu dikenal sebagai masjid sumpah perjuangan Banten dan sarana mengungkap kebenaran bagi pihak yang berselisih melalui proses sumpah sesuai syariat islam.' }}
                     </p>
                     @if ($mosque?->address)
                         <p class="text-brown"><i class="bi bi-geo-alt-fill me-1"></i>{{ $mosque->address }}</p>

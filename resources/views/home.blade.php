@@ -43,7 +43,7 @@
                         <h2 class="museum-title">Tentang {{ $mosque?->name ?? 'Masjid Sumpah' }}</h2>
                         <div class="divider-gold"></div>
                         <p class="museum-text">
-                            {{ $mosque?->description ?? 'Salah satu masjid bersejarah di Kota Cilegon yang dikenal sebagai Masjid Perjuangan Banten dan tempat mengungkap kebenaran melalui tradisi persumpahan.' }}
+                            {{ $mosque?->description ?? 'Zaman dahulu dikenal sebagai masjid sumpah perjuangan Banten dan sarana mengungkap kebenaran bagi pihak yang berselisih melalui proses sumpah sesuai syariat islam.' }}
                         </p>
                         <p class="museum-note">
                             <i class="bi bi-shield-check"></i>

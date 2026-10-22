@@ -14,7 +14,7 @@ class MosqueInformationSeeder extends Seeder
             [
                 'name' => 'Masjid Sumpah',
                 'address' => 'Kampung Terate Udik RT 02/RW 02, Kelurahan Masigit, Kecamatan Jombang, Kota Cilegon, Provinsi Banten, Indonesia',
-                'description' => 'Salah satu masjid di Kota Cilegon, Provinsi Banten yang memiliki nama unik yakni “Masjid Sumpah”. Rumah ibadah yang terletak di Kampung Terate Udik ini dikenal sebagai Masjid Perjuangan Banten dan sarana mengungkap kebenaran bagi pihak yang dianggap tidak jujur melalui ikrar syariat Islam.',
+                'description' => 'Zaman dahulu dikenal sebagai masjid sumpah perjuangan Banten dan sarana mengungkap kebenaran bagi pihak yang berselisih melalui proses sumpah sesuai syariat islam.',
                 'history' => '<p class="lead">Salah satu masjid di Kota Cilegon, Provinsi Banten memiliki nama yang unik yakni <strong>“Masjid Sumpah”</strong>. Sesuai artinya, rumah ibadah yang terletak di Kampung Terate Udik, Kelurahan Masigit, Kecamatan Jombang itu kerap dijadikan tempat untuk mengungkap kebenaran dari pihak yang dianggap tidak jujur.</p>
 
 <p>Masjid Sumpah dari zaman dahulu diyakini oleh masyarakat sekitar bahwa masjid tersebut muncul sendiri atau berdiri tanpa ada yang mengetahui siapa yang membuatnya. Bahkan sebagian kesepuhan Kampung Terate Udik menyebut Masjid Sumpah sebagai <em>Masjid Perjuangan Banten</em> yang pada waktu dahulu digunakan untuk pertemuan-pertemuan para ulama dan kiai guna membahas tentang perjuangan, baik memperjuangkan tanah air maupun agama.</p>
